@@ -10,7 +10,7 @@
 * A hypervisor is a software that is use to run multiple virtual machines on a single physical machine. Example: EC2, Zen, VM ware, Oracle virtual box.. are hypervisor's
 * Virtualization aims to run multiple OS instances on a single server...like ec2
 
-### What is containerizatio?
+### What is containerization?
 * Containerization is a software (eg Docker engine) deployment process that bundles or packages  an application's code with all the files and libraries it needs to run on any infrastructure.
 * It is a lightweight engine
 <img width="588" alt="image 2b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a3af2d87-6e8e-44ec-b0dd-6e02ac1b2720">
@@ -44,3 +44,15 @@
 * It then interacts and get feedback from the docker deamon also called docker engine on the host side of the docker architecture
 * And retures the feedback on the client terminal..feeback can be images etc
 * The Registery side of the docker diagram is like a backup storage
+
+### Best way to run docket is from root
+<img width="732" alt="five best way to run docker" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/5145d89b-5756-4a66-a927-c26c38d4308d">
+* Im no longer geting permission denied because I am runing from the root 
+* Server communicates back info about server like numbers of server running etc
+<img width="810" alt="six no permission denied" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/53200151-c1cb-484d-bf9f-f522c334f731">
+
+* When I dont have access to the root command, I can use the "usermod" command
+* -a appends G, and ubuntu is added as a user in docker
+* The goal is to give user ubuntu permision to run docker info without error
+* In other case ,I will have to "exit" and login back, but in this case I 
+<img width="732" alt="eight" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/f718a10f-b2ae-40c5-be3e-d75ab0438daf">
