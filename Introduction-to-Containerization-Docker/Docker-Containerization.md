@@ -62,13 +62,29 @@
 
 # use docker scout to security tool for scaning images or trivy
 
-### Run a docker image "hello-world" from dockerhub
+### Example 1: How to use existing images tto run a docker image "hello-world" from dockerhub
 * When i run the command "docker run hello-world"  , two things will happen:
-* first,through the docker daemon, docker it will check my local computer for that image,  if it doesnt finds it, It will go to docker hub to pull it down
+* first,through the docker daemon, docker it will check my local computer for that image, it didnt find it, then It want to docker hub to pull it down
+* gave it an id
+* and a tag (lastest)
 <img width="890" alt="nineb" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/87ffab6a-481a-44ad-83be-c016746fbb8a">
 
 * I can also pull it from dockerhub  to run on my terminal
 <img width="960" alt="ten" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/806c0f08-57c8-4eeb-ae20-a0e8c1430165">
 * "docker pull hello-world" successful
 <img width="919" alt="11 docker pull hello-world successful" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b03c9d8b-74c4-4ce5-adae-7e704dd2e21b">
+# When i run an image, it means it already exit on my local machine but to pull it, is just to have it on my local system, I should also run it after pulling it down
+
+* Name of the repo is same name with the image.
+* Lastest is the defualt name for tag. Tag is like version. I can also rename it to a name of choice
+<img width="919" alt="12" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/d89fe851-8153-45d7-8bf3-d6d12bd908f2">
+
+
+### Example 2: pull down busybox image from docker libraries
+* "docker pull busybox" to pull the image from dockerhub
+* It gave it a defualt tag name; lastest and Id
+* "docker images" to display image content
+* To run the image,  "docker run busybox"
+
+<img width="916" alt="13" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/828eb996-4d0e-46ad-bb5a-97abba6c86e7">
 
