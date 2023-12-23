@@ -38,5 +38,6 @@
 ### Docker Architecture
 <img width="536" alt="image 3 docker architecture" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/22262b66-b42f-473a-9046-24cd10298947">
 <img width="927" alt="four" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/52d77bbf-87d2-4e40-8d4b-766236086dad">
-* There is a docket client and docker server 
-* Every commands i run, is from the client, interacting with the docker deamon /docker engine
+*There is a docket client and docker server 
+*The client communicate with thedocker host.
+*Every command is from the client and it interactes with the docker deamon or called docker engine 
