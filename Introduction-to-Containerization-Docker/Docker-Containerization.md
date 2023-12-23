@@ -15,11 +15,13 @@
 * It is a lightweight engine
 <img width="588" alt="image 2b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a3af2d87-6e8e-44ec-b0dd-6e02ac1b2720">
 
-### How to a docker image?
+### How to create a docker image?
 * The developer bundles the Application code, Dependencies, Libraries, Binaries, Directory structures etc in a file called docker file, and ship to docker hub or github,
 * The operations personel downloads the docker file to create docker image and creates a docker container.
 * A docker container is a runing instance of a docker images or containers
 * You can create as many containers of same image
+
+  ### Docker Life-Cycle
 <img width="621" alt="image3" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/49e05d13-e801-48eb-9a1d-34388e0346c8">
 
 
@@ -54,5 +56,19 @@
 * When I dont have access to the root command, I can use the "usermod" command
 * -a appends G, and ubuntu is added as a user in docker
 * The goal is to give user ubuntu permision to run docker info without error
-* In other case ,I will have to "exit" and login back, but in this case I 
+* In other case ,I will have to "exit" and login back, but in this case I didnt
+* Thsi is the same command to add a new user to docker
 <img width="732" alt="eight" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/f718a10f-b2ae-40c5-be3e-d75ab0438daf">
+
+# use docker scout to security tool for scaning images or trivy
+
+### Run a docker image "hello-world" from dockerhub
+* When i run the command "docker run hello-world"  , two things will happen:
+* first,through the docker daemon, docker it will check my local computer for that image,  if it doesnt finds it, It will go to docker hub to pull it down
+<img width="890" alt="nineb" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/87ffab6a-481a-44ad-83be-c016746fbb8a">
+
+* I can also pull it from dockerhub  to run on my terminal
+<img width="960" alt="ten" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/806c0f08-57c8-4eeb-ae20-a0e8c1430165">
+* "docker pull hello-world" successful
+<img width="919" alt="11 docker pull hello-world successful" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b03c9d8b-74c4-4ce5-adae-7e704dd2e21b">
+
