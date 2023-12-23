@@ -1,7 +1,5 @@
 ## Docker-Containerization-Introduction
 
-### Docker Architecture
-<img width="536" alt="image 3 docker architecture" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/22262b66-b42f-473a-9046-24cd10298947">
 ## Notes:Understanding -Docker
 ### Docker is a container engine
 <img width="510" alt="image 1" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6b730a64-603c-446b-9784-74ced0eb59d9">
@@ -37,3 +35,8 @@
 <img width="905" alt="two install docker lastest version after update -y" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/eab73a21-a79e-4627-b96f-fdee2d7de01e">
 <img width="817" alt="three" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/7e8c6f1f-fe8a-467a-b30e-4feb8cbcfcc7">
  
+### Docker Architecture
+<img width="536" alt="image 3 docker architecture" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/22262b66-b42f-473a-9046-24cd10298947">
+<img width="927" alt="four" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/52d77bbf-87d2-4e40-8d4b-766236086dad">
+* There is a docket client and docker server 
+* Every commands i run, is from the client, interacting with the docker deamon /docker engine
