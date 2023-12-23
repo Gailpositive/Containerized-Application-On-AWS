@@ -1,5 +1,5 @@
 
-## Notes:Understanding container
+## Notes:Understanding -Docker
 <img width="510" alt="image 1" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6b730a64-603c-446b-9784-74ced0eb59d9">
 
 ### What is Virtualization?
@@ -15,7 +15,8 @@
 
 ### How to a docker image?
 * The developer bundles the Application code, Dependencies, Libraries, Binaries, Directory structures etc in a file called docker file, and ship to docker hub or github,
-* The operations personel downloads the docker file to create docker image, to create a docker container.
+* The operations personel downloads the docker file to create docker image and creates a docker container.
 * A docker container is a runing instance of a docker image.
+* You can create as many containers of same image
 
 <img width="621" alt="image3" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/49e05d13-e801-48eb-9a1d-34388e0346c8">
