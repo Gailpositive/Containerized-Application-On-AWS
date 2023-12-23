@@ -38,9 +38,9 @@
 ### Docker Architecture
 <img width="536" alt="image 3 docker architecture" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/22262b66-b42f-473a-9046-24cd10298947">
 <img width="927" alt="four" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/52d77bbf-87d2-4e40-8d4b-766236086dad">
-*There is a docket client and docker server 
-*The client communicate with the docker host.
-*Every command I input on my terminal is from the client side
-*It then interacts and get feedback from the docker deamon also called docker engine on the host side of the docker architecture
+* There is a docket client and docker server 
+* The client communicate with the docker host.
+* Every command I input on my terminal is from the client side
+* It then interacts and get feedback from the docker deamon also called docker engine on the host side of the docker architecture
 * And retures the feedback on the client terminal..feeback can be images etc
 * The Registery side of the docker diagram is like a backup storage
