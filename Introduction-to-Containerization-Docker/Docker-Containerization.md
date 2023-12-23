@@ -1,5 +1,5 @@
 
-## Notes:
+## Notes:Understanding container
 <img width="510" alt="image 1" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6b730a64-603c-446b-9784-74ced0eb59d9">
 
 ### What is Virtualization?
@@ -12,3 +12,10 @@
 * Containerization is a software (eg Docker engine) deployment process that bundles or packages  an application's code with all the files and libraries it needs to run on any infrastructure.
 * It is a lightweight engine
 <img width="588" alt="image 2b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a3af2d87-6e8e-44ec-b0dd-6e02ac1b2720">
+
+### How to a docker image?
+* The developer bundles the Application code, Dependencies, Libraries, Binaries, Directory structures etc in a file called docker file, and ship to docker hub or github,
+* The operations personel downloads the docker file to create docker image, to create a docker container.
+* A docker container is a runing instance of a docker image.
+
+<img width="621" alt="image3" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/49e05d13-e801-48eb-9a1d-34388e0346c8">
