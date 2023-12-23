@@ -1,5 +1,6 @@
 
 ## Notes:Understanding -Docker
+### Docker is a container engine
 <img width="510" alt="image 1" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6b730a64-603c-446b-9784-74ced0eb59d9">
 
 ### What is Virtualization?
