@@ -96,9 +96,41 @@
 *  "docker run -it busybox" command iteracts with the image and does not exit.
 <img width="869" alt="15" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/046e8054-e56a-4037-beb5-9a60cd574a8c">
 
-* "docker ps -a" displays current process of container
+* "docker ps -a" (a stands for all) displays all current process of the container
 * By default, containers are giving random name
 * To rename the defualt random name and give a container a name, I run the command, "docker run -it --name containerV1 busybox"
-* and "docker ps -a" to view process
+* and "docker ps -a" to view all process
 <img width="917" alt="16" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b83a9666-04de-4781-86c1-5754e96292d8">
+### Note: Image is different from container. Image is use to create a container. A container is a running instance of an image
+
+* "docker container ps" to check if there is any containers
+<img width="916" alt="17" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/9d4f5cee-54f5-42eb-9645-e4baa0901c41">
+* I had to run another container in root as I made a mistake runing the container in ubuntu
+<img width="915" alt="17b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/8c900215-694a-4b73-868e-68bf23fd79c1">
+
+* Container is running behind, to view this I switch into cloudshell
+* An image can create three duplicate containers of that same image
+<img width="911" alt="18" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/e8c6b747-6be5-4c51-9166-38b97d33ba61">
+
+* I didnt config an external port so it couldnt connect hence I had to inprovised
+* To connect to my instance,  I copied the  Public DNS from ssh client and uploaded the private key pem file
+<img width="960" alt="19" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/23b83313-e8e2-4cf0-8994-e648c740ef80">
+
+* Open the private key-file
+<img width="467" alt="20a" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/8e136be7-e90f-4356-a58d-77a2185ff41f">
+
+  * File uploaded successfully
+<img width="960" alt="20" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6091b67a-dfd1-46c4-8959-789b6a1434f6">
+
+* ls to see the pem file uploaded
+* chomod 400 (can also use chmod 600)
+* run the ssh client again
+* <img width="960" alt="21" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/65e8e81b-b2bf-43e9-be3c-a2fcfdef112c">
+
+* And viola! I am in
+<img width="955" alt="22" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b386d8c5-7c39-4f88-81e5-c672f5542dba">
+
+* "docker ps" displays current running containers only
+* While "docker ps -a" displays all container exited
+<img width="928" alt="23" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6230a030-e43a-4a77-bfc7-f0944f60a43b">
 
