@@ -85,6 +85,18 @@
 * It gave it a defualt tag name; lastest and Id
 * "docker images" to display image content
 * To run the image,  "docker run busybox"
-
 <img width="916" alt="13" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/828eb996-4d0e-46ad-bb5a-97abba6c86e7">
 
+* "docker ps" to check docker process currently running. No container currently running
+* "docker ps -a" to check all process ever ran 
+<img width="873" alt="14 docker process" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/7c93d344-b7ea-4035-9b11-1e2f27f0ec20">
+
+* Busybox is a compressed and minimized version operating system. it doesnt run all commands
+*  "docker run -it busybox" command iteracts with the image and does not exit.
+<img width="869" alt="15" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/046e8054-e56a-4037-beb5-9a60cd574a8c">
+
+* "docker ps -a" displays current process of container
+* By default, containers are giving random name
+* To rename the defualt random name, I run the command, "docker run -it --name containerV1 busybox"
+* and "docker ps -a" to view process
+<img width="917" alt="16" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b83a9666-04de-4781-86c1-5754e96292d8">
