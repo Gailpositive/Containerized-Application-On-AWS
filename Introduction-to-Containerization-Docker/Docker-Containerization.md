@@ -127,6 +127,7 @@
 * run the ssh client again
 * <img width="960" alt="21" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/65e8e81b-b2bf-43e9-be3c-a2fcfdef112c">
 
+### First container created
 * And viola! I am in
 <img width="955" alt="22" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b386d8c5-7c39-4f88-81e5-c672f5542dba">
 
@@ -134,3 +135,7 @@
 * While "docker ps -a" displays all container exited
 <img width="928" alt="23" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6230a030-e43a-4a77-bfc7-f0944f60a43b">
 
+* "docker container ps" shows details of the container currently running
+* "docker run -itd --name con4 nginx" creates another detach nginx image.(itd means Dettach)
+* To get back on the same container, I run "docker 
+<img width="908" alt="24" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/082f154a-aea3-43d8-a2de-7123ff2f29c7">
