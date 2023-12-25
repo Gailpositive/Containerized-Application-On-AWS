@@ -77,3 +77,63 @@ In this exercise, I will create an AWS Cloud9 instance and modify some of the en
 * "bash utilities/c9-resize.sh 40"
 
 ### Task 3: Building the first container
+* In this task, I will pull the required images and build my  first Docker container.
+1. Change directory to first-container/.
+* cd first-container/
+
+2. Inspect the Dockerfile, and build a container image.
+* docker build -t first-container .
+
+3. View the Docker images.
+* docker image ls
+* The application being served sits on port 8080 in the container image.
+
+4. Publish port 8080 to your AWS Cloud9 host and make it available on port 8080.
+* docker run -d -p 8080:8080 --name webapp first-container
+
+5. View the running Docker containers.
+* docker ps
+
+6. View the logs that are being captured from the container.
+* "docker logs webapp"
+
+7. You will now view the application in a browser.
+* At the top of your AWS Cloud9 instance, choose Preview and then choose Preview Running Application.
+* You should see the running application.
+
+8. Launch a shell inside the container.
+* You can use this shell to run commands within the container itself.
+* "docker exec -it webapp /bin/sh"
+
+9. In the container, look at the contents of the /app folder and view the contents of /app/input.txt.
+* ls /app
+* cat /app/input.txt
+
+10. In the container, view the process list.
+* ps -a
+
+11. Escape out of the container (you can escape out of the container by pressing Ctrl+D).
+
+12. Stop and remove the running container.
+* "docker stop webapp"
+* "docker rm webapp"
+
+### Task 4: Modifying the container with new data
+* In this task, you will change the input.txt file inside the container with new data. You can use a bind mount to mount a local file resource in place of /app/input.txt inside the container.
+
+1. Create an ~/input.txt file with five words, with each word on a new line.
+* printf "cinco\ncuatro\ntres\ndos\nuno" > ~/input.txt
+  
+2. Launch a container with the new file mounted in place of /app/input.txt.
+* docker run -d -p 8080:8080 \
+* -e MESSAGE_COLOR=#0000ff \
+* -v ~/input.txt:/app/input.txt \
+* --name webapp \
+* first-container
+
+* I  can configure an application that’s running in a container with environment variables. The containerized application takes MESSAGE_COLOR as an environment variable.
+
+3. Visit the updated application in a browser by choosing Preview, Preview Running Application.
+
+4. Force-remove the container.
+* "docker rm -f webapp"
