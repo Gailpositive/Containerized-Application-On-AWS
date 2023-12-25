@@ -137,3 +137,22 @@ In this exercise, I will create an AWS Cloud9 instance and modify some of the en
 
 4. Force-remove the container.
 * "docker rm -f webapp"
+
+## What is an image registry?
+An image registry is a repository where you can store container images. From this registry, both DevOps tools and people can pull down container images to run, deploy, or expand on. Image registries can be public or private. Public registries are useful for providing images that can be used as base images for software development. For example, if your company provided a database engine, you could host images with the database software preinstalled on it. Your customers could then use these images as base images to expand on, which would make it easier for them to get their software up and running. Private registries are useful in situations where you don’t want to expose container images to the public, which is often the case with proprietary software.
+
+## Docker Hub
+Docker Hub is a popular repository for container images. It offers a variety of sources for container images that you can use, including images from container community developers, open-source projects, and software vendors. For more information about Docker Hub, see https://www.docker.com/products/docker-hub/
+Docker Hub
+
+
+## Amazon ECR
+Amazon Elastic Container Registry (Amazon ECR) is a private, container image registry. With Amazon ECR, you can create multiple repositories to store and share your container images. To make it easier to deploy your containerized application, Amazon ECR integrates with other AWS services—such as Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), and AWS Lambda.
+
+## Amazon ECR Public
+Amazon ECR also offers a highly available repository for your public images. You can create a repository for your authenticated AWS Identity and Access Management (IAM) identities to push to a public image repository. Thus, an unauthenticated user with or without an AWS account can pull from your public repository. For more information and to see a searchable list of public repositories, see the https://gallery.ecr.aws/
+Amazon ECR Public Gallery
+.
+
+AWS App Runner
+AWS App Runner provides a way to run your containerized application on AWS infrastructure. You only need to supply a container image or application source to App Runner. App Runner creates all the infrastructure needed to host your application, and it also supplies you with an HTTP endpoint. App Runner serves your application with end-to-end encryption. As load increases, it will also scale within parameters that you define.
