@@ -20,7 +20,7 @@
 
 
 ### In this exercise, I'll create an AWS Cloud9 instance and modify some of the environment settings. 
-### You also install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
+### I also install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
 
 
   ### Setting up
