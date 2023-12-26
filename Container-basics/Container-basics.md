@@ -73,12 +73,17 @@
 * Download and extract the source code
 <img width="927" alt="15 download and etract source code i need" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/4b6b1e30-be30-441a-be33-b97250dbaa66">
 
+* Replace the current association with the cloud9-containers-role
 <img width="749" alt="16 replacing aws association" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/bd495d0e-d7d5-491d-8edf-a943005db051">
 
+* State is listed as associated.
 <img width="655" alt="17 state is associated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/285a90f6-8c8a-44c9-9d8d-3a89e1677a9b">
 
+* Disable credential rotation and utilize cloudformation to created for enhanced control
+* Retrieve info about AWS IAM
 <img width="694" alt="18 aws get caller identity" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/1bfc7feb-cfd3-4520-b2ef-8e1dfb242f0a">
 
+* Expand the AWS Cloud9 disk by running the following utility
 <img width="705" alt="19 bash utilities c9-resize sh 40" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/76f83035-3539-4393-921e-4bcd4084a710">
 
 <img width="950" alt="20 inspect docker file and build a container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/06741ae4-2548-4691-87f7-c20058ddee9a">
