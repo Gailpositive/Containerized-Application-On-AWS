@@ -49,6 +49,33 @@
 * Cloud9 IDE to run on  a new EC2 instance
 <img width="946" alt="10 create cloud9" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6f047241-478b-4291-a1b9-7803e10e648f">
 
+* On the networkin setting, no external traffic is allow access, Choose AWS system manager 
+<img width="960" alt="11 scroll down to setting choose vpc containers vpc" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/5dac7eee-893e-4a09-8151-03af7acaccd2">
+
+* Config VPC  settings and Attach internet gateway 
+* And create
+<img width="921" alt="12 container-cloud9 successfully created" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/e16a328f-27b2-4130-85c9-d0f264e9f893">
+
+* Successfully created
+<img width="910" alt="13aws install updated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/380d38af-e9af-48c0-8939-3a1fdaf39424">
+
+
+## Task 2: Modifying and deploying source code to AWS Cloud9
+<img width="563" alt="14 very aws version" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/78945a63-b66f-44c9-9cfc-0fc582c517a5">
+
+<img width="927" alt="15 download and etract source code i need" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/4b6b1e30-be30-441a-be33-b97250dbaa66">
+
+<img width="749" alt="16 replacing aws association" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/bd495d0e-d7d5-491d-8edf-a943005db051">
+
+<img width="655" alt="17 state is associated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/285a90f6-8c8a-44c9-9d8d-3a89e1677a9b">
+
+<img width="694" alt="18 aws get caller identity" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/1bfc7feb-cfd3-4520-b2ef-8e1dfb242f0a">
+
+<img width="705" alt="19 bash utilities c9-resize sh 40" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/76f83035-3539-4393-921e-4bcd4084a710">
+
+<img width="950" alt="20 inspect docker file and build a container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/06741ae4-2548-4691-87f7-c20058ddee9a">
+
+<img width="835" alt="20b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/bca42540-863f-4317-869f-79d8901a27dc">
 
 
 
