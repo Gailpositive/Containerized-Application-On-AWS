@@ -36,7 +36,7 @@
 
 11. Select the acknowledgement and choose Create stack. Wait for the stack to complete.
 
-## Exercise 1: Creating the First Container
+## PART 1: Creating the First Container
 * In this exercise, you create an AWS Cloud9 instance and modify some of the environment settings. You also install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
 
 ### Task 1: Creating an AWS Cloud9 instance
