@@ -1,4 +1,5 @@
-# Container-Basic
+
+# CONTAINER-Basics
 
 
 ### In this exercise, I'll create an AWS Cloud9 instance and modify some of the environment settings. 
