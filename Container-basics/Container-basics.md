@@ -86,9 +86,31 @@
 * Expand the AWS Cloud9 disk by running the following utility
 <img width="705" alt="19 bash utilities c9-resize sh 40" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/76f83035-3539-4393-921e-4bcd4084a710">
 
+### Task 3: Building the first container
+
+* Change directory to first-container/.
+* build a container image name first-container with the -t flag
 <img width="950" alt="20 inspect docker file and build a container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/06741ae4-2548-4691-87f7-c20058ddee9a">
 
-<img width="835" alt="20b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/bca42540-863f-4317-869f-79d8901a27dc">
+* List images
+<img width="748" alt="21 docker image created" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/835cf819-3b0f-4f80-9e17-2511fafbdc03">
+
+* 
+<img width="753" alt="22 docker run d port 8080" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b2693b10-e631-4f05-943b-5a413e9f9a71">
+
+<img width="941" alt="23 application running on browser" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/0a709db0-f459-43f5-ab81-35a08be717c0">
+
+<img width="768" alt="24 docker exec" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/c149fa9c-b76d-4b70-b6ff-58eab93d86c0">
+
+<img width="764" alt="25 stop and rm running webapp" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/eddb7aa1-77e3-4a29-90b5-947024192942">
+<img width="737" alt="26  create app input text and launch a container with the new file mounted" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/79534299-ffcb-4f87-aac4-099b6dbb7956">
+
+<img width="563" alt="27  view updated application running on broswer" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/054394d6-1bef-43d1-b384-a82dcf23a5c2">
+
+<img width="756" alt="28 Force remove the container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/9542365a-ed6b-40c3-b5f0-ab3e2a61a4bf">
+
+<img width="421" alt="29 ECR image" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b2a1824d-9206-40ab-b816-2805caf62523">
+<img width="751" alt="30 cretae ECR repo and save" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/c06590c3-9ffd-4784-bd34-b3e1448241e6">
 
 
 
