@@ -1,11 +1,21 @@
 # Containerized-Application-On-AWS
 ## Container-Basics
 
-### Exercises-Course,I'll be create the following resources:
+## PART 1: CREATING CONTAINER IN AWS
+### AWS Technologies Used:
 * AWS Identity and Access Management (IAM) policy and user (Policies and users are AWS account features, offered at no additional charge)
 * AWS Cloud9 integrated development environment (IDE) instance
 * AWS CloudFormation stack
 * Amazon DynamoDB table
+
+
+## PART 2: AWS CONTAINER REGISTRY...Amazon ECR and AWS App Runner
+### AWS Technologis Used:
+* AWS Identity and Access Management (IAM) policy and user 
+* AWS App Runner service
+* Amazon Elastic Container Registry (Amazon ECR) repository
+
+  
 
 ### Setting up
 * This exercise requires an IAM role that will be used with the AWS Cloud9 instance.
@@ -262,7 +272,7 @@ AWS Identity and Access Management (IAM) policy and user
 AWS App Runner service
 Amazon Elastic Container Registry (Amazon ECR) repository
 
-### Exercise 2: Using Amazon ECR and AWS App Runner
+### PART 2: Using Amazon ECR and AWS App Runner
 * In this exercise, I create an Amazon ECR repository, authenticate to Amazon ECR, and then push my image to the Amazon ECR repository. I will then set up and deploy an AWS App Runner service.
 
 ### Task 1: Creating an Amazon ECR repository
