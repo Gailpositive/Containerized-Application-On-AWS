@@ -18,25 +18,25 @@
 
   
 
-### Setting up
+### Setting up: Download Cloudformation template
 * This exercise requires an IAM role that will be used with the AWS Cloud9 instance.
 * It also requires a DynamoDB table that will be set up and then used in a later exercise.
 * The CloudFormation stack will create these resources for you. You will also need to choose a Region where AWS App Runner is available: https://docs.aws.amazon.com/general/latest/gr/apprunner.html
 
 1. Download the following CloudFormation template: https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-ContainersRedux/downloads/exercise-containers.yml (exercise-containers.yml.) This template will set up the backend resources that are needed to complete the exercise.
- ### Note: If you have an existing Virtual Private Cloud (VPC) and it has a Classless Inter-Domain Routing (CIDR) block of 10.16.0.0/16, you must edit the template to change it
-1. Download the following CloudFormation template. This template will set up the backend resources that are needed to complete the exercise.
-2. On AWS Management Console, open CloudFormation.
-3. Create stack.
-4. For Specify template, choose Upload a template file.
-5. Choose file and browse to downloaded the exercise-containers template.
-6. Select the exercise-containers template and choose Open and Next.
-7. For Stack name, enter exercise-containers.
-8.  Choose Next, and then choose Next again.
-9. Select the acknowledgement, Create stack and  wait for the stack to complete.
+ ### Note: If there is an existing Virtual Private Cloud (VPC) and it has a Classless Inter-Domain Routing (CIDR) block of 10.16.0.0/16, you must edit the template to change it
+2. Download the following CloudFormation template. This template will set up the backend resources that are needed to complete the exercise.
+3. On AWS Management Console, open CloudFormation.
+4. Create stack.
+5. For Specify template, choose Upload a template file.
+6. Choose file and browse to downloaded the exercise-containers template.
+7. Select the exercise-containers template and choose Open and Next.
+8. For Stack name, enter exercise-containers.
+9.  Choose Next, and then choose Next again.
+10. Select the acknowledgement, Create stack and  wait for the stack to complete.
   
 
-## PART 1: Creating the First Container
+## PART 1: Creating the Container
 * In this exercise, I will create an AWS Cloud9 instance and modify some of the environment settings.
 * Install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
 
