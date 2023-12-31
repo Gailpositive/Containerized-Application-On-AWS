@@ -120,43 +120,32 @@
 * View the running application.
 <img width="941" alt="23 application running on browser" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/680d30f3-b84d-4801-95d0-1a60746f3e1b">
 
-
-
-8. Launch a shell inside the container.
-* You can use this shell to run commands within the container itself.
+* Launch a shell inside the container
 * docker exec -it webapp /bin/sh
+* view process list
+* In the container, view the contents of the /app folder and the contents of /app/input.txt.
+* Escape out of the container
+<img width="768" alt="24 docker exec" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/d914fe68-2539-4854-b2f1-29eb2f73bbe8">
 
-9. In the container, look at the contents of the /app folder and view the contents of /app/input.txt.
-* ls /app
-* cat /app/input.txt
 
-10. In the container, view the process list.
-* ps -a
+* Stop and remove the running container.
+<img width="764" alt="25 stop and rm running webapp" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a18fe91b-7747-45a2-94d3-5262531de2ed">
 
-11. Escape out of the container (you can escape out of the container by pressing Ctrl+D).
-    
-12. Stop and remove the running container.
-* docker stop webapp
-* docker rm webapp
 
 ### Task 4: Modifying the container with new data
-* In this task, you will change the input.txt file inside the container with new data. You can use a bind mount to mount a local file resource in place of /app/input.txt inside the container.
+* In this task, I will change the input.txt file inside the container with new data. I can use a bind mount to mount a local file resource in place of /app/input.txt inside the container.
 
-1. Create an ~/input.txt file with five words, with each word on a new line.
-* printf "cinco\ncuatro\ntres\ndos\nuno" > ~/input.txt
+* Create an ~/input.txt file with five words, with each word on a new line and 
+* Launch a container with the new file mounted in place of /app/input.txt.
+* Configure an application that’s running in a container with environment variables. The containerized application takes MESSAGE_COLOR as an environment variable.
+<img width="737" alt="26  create app input text and launch a container with the new file mounted" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/77fdbb69-62ce-460d-8332-253e76a7a5ff">
 
-2. Launch a container with the new file mounted in place of /app/input.txt.
-* docker run -d -p 8080:8080 \
-* -e MESSAGE_COLOR=#0000ff \
-* -v ~/input.txt:/app/input.txt \
-* --name webapp \
-* first-container
-* You can configure an application that’s running in a container with environment variables. The containerized application takes MESSAGE_COLOR as an environment variable.
+* Visit the updated application in cloud9 browser by choosing Preview, Preview Running Application.
+<img width="563" alt="27  view updated application running on broswer" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/cb65de88-b450-4287-9e2b-c3130d5b5327">
 
-3. Visit the updated application in a browser by choosing Preview, Preview Running Application.
+* Force-remove the container.
+<img width="756" alt="28 Force remove the container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/10de910a-37a5-4c7e-b4da-18c73e5fa671">
 
-4. Force-remove the container.
-* docker rm -f webapp
 
 
 # READINGS
