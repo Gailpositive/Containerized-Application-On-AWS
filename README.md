@@ -9,8 +9,9 @@
 * Amazon DynamoDB table
 
 
-## PART 2: AWS CONTAINER REGISTRY...Amazon ECR and AWS App Runner
+## PART 2: Create A Private Container Registry Within AWS Elastic Container Registry (ECR) and Deploy It On AWS App Runner
 ### AWS Technologis Used:
+* AWS Cloud9 IDE
 * AWS Identity and Access Management (IAM) policy and user 
 * AWS App Runner service
 * Amazon Elastic Container Registry (Amazon ECR) repository
