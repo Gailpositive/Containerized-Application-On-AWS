@@ -24,42 +24,32 @@
 * The CloudFormation stack will create these resources for you. You will also need to choose a Region where AWS App Runner is available: https://docs.aws.amazon.com/general/latest/gr/apprunner.html
 
 1. Download the following CloudFormation template: https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-ContainersRedux/downloads/exercise-containers.yml (exercise-containers.yml.) This template will set up the backend resources that are needed to complete the exercise.
-   
-### Note: If you have an existing Virtual Private Cloud (VPC) and it has a Classless Inter-Domain Routing (CIDR) block of 10.16.0.0/16, you must edit the template to change it.
-
-2. Sign in to the AWS Management Console as a user that has administrator permissions.
-
-3. Choose Services, and search for and open CloudFormation.
-
-4. Choose Create stack.
-
-5. For Specify template, choose Upload a template file.
-
-6. Select Choose file and browse to where you downloaded the exercise-containers template.
-
-7. Select the exercise-containers template and choose Open.
-
-8. Choose Next.
-
-9. For Stack name, enter exercise-containers.
-
-10. Choose Next, and then choose Next again.
-
-11. Select the acknowledgement and choose Create stack. Wait for the stack to complete.
+ ### Note: If you have an existing Virtual Private Cloud (VPC) and it has a Classless Inter-Domain Routing (CIDR) block of 10.16.0.0/16, you must edit the template to change it
+1. Download the following CloudFormation template. This template will set up the backend resources that are needed to complete the exercise.
+2. On AWS Management Console, open CloudFormation.
+3. Create stack.
+4. For Specify template, choose Upload a template file.
+5. Choose file and browse to downloaded the exercise-containers template.
+6. Select the exercise-containers template and choose Open and Next.
+7. For Stack name, enter exercise-containers.
+8.  Choose Next, and then choose Next again.
+9. Select the acknowledgement, Create stack and  wait for the stack to complete.
+  
 
 ## PART 1: Creating the First Container
-* In this exercise, you create an AWS Cloud9 instance and modify some of the environment settings. You also install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
+* In this exercise, I will create an AWS Cloud9 instance and modify some of the environment settings.
+* Install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
+
 
 ### Task 1: Creating an AWS Cloud9 instance
 * In this task, you will create an AWS Cloud9 instance.
-
-!. In the AWS Management Console, choose Services, and then search for and open Cloud9.
-2. Choose Create environment.
-3. For Name, enter containers-cloud9 and choose Next step.
-4. Configure the following settings:
- * Instance type: t3.small (2 GiB RAM + 2 vCPU)
- *Network settings: VPC settings: Containers VPC
+* In this task, you will create an AWS Cloud9 instance.
+* For Name, I will enter containers-cloud9 and choose Next step.
+* Then, configure the following settings:
+* Instance type: t3.small (2 GiB RAM + 2 vCPU) (I used t2 in this project)
+* Network settings: VPC settings: Containers VPC
 5. Choose Create.
+
 
 ### Task 2: Modifying and deploying source code to AWS Cloud9
 In this task, you will upgrade the AWS Command Line Interface (AWS CLI) version  https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html , and deploy the source code that’s needed to complete the exercise. You will also associate the instance profile with your AWS Cloud9 instance. Finally, you will expand your environment to give it more disk space.
