@@ -2,13 +2,17 @@
 # CONTAINER-Basics
 
 ## PART ONE: CREATING-CONTAINER-IN-AWS
-## PART TWO: AWS IMAGE REGISTRY--Amazon ECR and AWS App Runner
-
 ###  AWS Technologies Used: 
 * AWS Identity and Access Management (IAM) policy and user 
 * AWS Cloud9 integrated development environment (IDE) instance
 * AWS CloudFormation stack
 * Amazon DynamoDB table
+  
+## PART 2: AWS CONTAINER REGISTRY...Amazon ECR and AWS App Runner
+### AWS Technologis Used:
+* AWS Identity and Access Management (IAM) policy and user 
+* AWS App Runner service
+* Amazon Elastic Container Registry (Amazon ECR) repository
 
 ### PREREQUISITES: Download a cloudformation template to establish the required backend resources for completing the exercise and config a source code for launching container instances within the AWS Cloud9 environment.
 
