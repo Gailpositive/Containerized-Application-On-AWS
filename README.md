@@ -23,26 +23,40 @@
 * It also requires a DynamoDB table that will be set up and then used in a later exercise.
 * The CloudFormation stack will create these resources for you. You will also need to choose a Region where AWS App Runner is available: https://docs.aws.amazon.com/general/latest/gr/apprunner.html
 
-1. Download the following CloudFormation template: https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-ContainersRedux/downloads/exercise-containers.yml (exercise-containers.yml.) This template will set up the backend resources that are needed to complete the exercise.
+* Download the following CloudFormation template: https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-ContainersRedux/downloads/exercise-containers.yml (exercise-containers.yml.) This template will set up the backend resources that are needed to complete the exercise.
+
+
  ### Note: If there is an existing Virtual Private Cloud (VPC) and it has a Classless Inter-Domain Routing (CIDR) block of 10.16.0.0/16, you must edit the template to change it
-2. Download the following CloudFormation template. This template will set up the backend resources that are needed to complete the exercise.
-3. On AWS Management Console, open CloudFormation.
-4. Create stack.
-5. For Specify template, choose Upload a template file.
-6. Choose file and browse to downloaded the exercise-containers template.
-7. Select the exercise-containers template and choose Open and Next.
-8. For Stack name, enter exercise-containers.
-9.  Choose Next, and then choose Next again.
-10. Select the acknowledgement, Create stack and  wait for the stack to complete.
+* Download the following CloudFormation template. This template will set up the backend resources that are needed to complete the exercise.
+* On AWS Management Console, open CloudFormation.
+<img width="957" alt="1" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/2e1f19e0-c4e1-4e32-8857-90e7f5243beb">
+* Create stack.
+<img width="955" alt="2" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/15112954-6da8-4f6c-9805-9c92c6f566fc">
+* For Specify template, choose Upload a template file.
+<img width="958" alt="3a" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a5e11039-c2df-4305-a9b5-7cfbefff9319">
+* Choose file and browse to downloaded the exercise-containers template.
+* Select the exercise-containers template and choose Open and Next.
+<img width="929" alt="4" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/ac31e927-e5fb-4fa1-b732-81239d8e795b">
+* For specify stack details, provide  Stack name, enter exercise-containers.
+<img width="932" alt="5 stack created and named" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/ab6c56a7-801d-4c5a-8874-cec87a773b08">
+
+* No tag was added
+<img width="949" alt="6   click next" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/079e1f54-c78a-422b-b618-739e5fe2703d">
+
+* Reviewed stack for any errors and corrections
+<img width="944" alt="7 review" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/958fe762-bb11-430f-b687-7d9c4205ab46">
+* Acknowledge Cloudformation to create IAM resources, submit stack and  wait for the stack to complete
+<img width="946" alt="8 scroll down and acknowledge cloudformation and click next" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/39409f25-fa31-404d-a837-e58d30582672">
+
+ 
   
 
 ## PART 1: Creating the Container
 * In this exercise, I will create an AWS Cloud9 instance and modify some of the environment settings.
-* Install the prerequisites and source code that are needed to launch new container instances inside your AWS Cloud9 environment.
+* Install the prerequisites and source code that are needed to launch new container instances inside AWS Cloud9 environment.
 
 
 ### Task 1: Creating an AWS Cloud9 instance
-* In this task, you will create an AWS Cloud9 instance.
 * In this task, you will create an AWS Cloud9 instance.
 * For Name, I will enter containers-cloud9 and choose Next step.
 * Then, configure the following settings:
