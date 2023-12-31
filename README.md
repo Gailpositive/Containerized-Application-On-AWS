@@ -1,4 +1,4 @@
-# Containerized-Application-On-AWS
+# Docker-Application-On-AWS
 ## Container-Basics
 
 ## PART 1: CREATING CONTAINER IN AWS
