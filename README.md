@@ -67,36 +67,35 @@
 * VPC settings: Containers VPC
 * Choose Create.
 <img width="960" alt="11 scroll down to setting choose vpc containers vpc" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/76dcc8b2-dc4d-4374-812b-dc07bd723f4f">
+* Container successfully created in cloud9
+ <img width="921" alt="12 container-cloud9 successfully created" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6468ee78-0e8f-45d6-815b-9df36709cb27"> 
+
+
+### Task 2: Modify and deploy source code to AWS Cloud9
+### In this task, I will upgrade the AWS Command Line Interface (AWS CLI) version  (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+### 
+
+* In the AWS Cloud9 terminal, I  upgrade the AWS CLI version
+* Deploy the source code that’s needed to complete the exercise
+* Associate the instance profile with my AWS Cloud9 instance
+* Finally, I will expand my environment to give it more disk space.
+<img width="910" alt="13aws install updated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/0035dd75-30c6-4561-95ee-b07662ead032">
+
+*  Verify the "AWS --version"
+<img width="563" alt="14 very aws version" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/f1f69b3a-0258-4f9e-bcec-55e052ae4833">
+
+* Download and extract the source code that I need for this exercise
+<img width="927" alt="15 download and etract source code i need" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/575f1f2b-6a7b-42a8-9d16-82e78d824959">
   
+* Replace the current association with the cloud9-containers-role.
+<img width="749" alt="16 replacing aws association" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/453e0e6c-899b-4abe-b430-e019e43b91ec">
 
+* Ensure that the State is listed as associated
+<img width="655" alt="17 state is associated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6a778ab0-af98-4a37-885c-d8a6fce0f531">
 
-
-### Task 2: Modifying and deploying source code to AWS Cloud9
-In this task, you will upgrade the AWS Command Line Interface (AWS CLI) version  https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html , and deploy the source code that’s needed to complete the exercise. You will also associate the instance profile with your AWS Cloud9 instance. Finally, you will expand your environment to give it more disk space.
-
-1. In the AWS Cloud9 terminal, upgrade the AWS CLI version by running the following command.
-* curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-* unzip awscliv2.zip
-* sudo ./aws/install
-* . ~/.bashrc
-* 
-2. Verify the version
-* aws --version
-
-3. Download and extract the source code that you need for this exercise.
-* wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-ContainersRedux/downloads/containers-src.zip
-* unzip containers-src.zip
-  
-4. Replace the current association with the cloud9-containers-role.
-* export ASSOC_ID="`aws ec2 describe-iam-instance-profile-associations | grep AssociationId | cut -f2- -d: | tr -d ',' | xargs`"
-* aws ec2 replace-iam-instance-profile-association --iam-instance-profile Name=cloud9-containers-role --association-id $ASSOC_ID
-
-5. Make sure that the State is listed as associated
-* aws ec2 describe-iam-instance-profile-associations
-
-6. Run the following command.
-* This command tells AWS Cloud9 to specifically disable the managed rotated credentials, and instead use the cloud9-containers-role that CloudFormation created from the template.
-* aws cloud9 update-environment  --environment-id $C9_PID --managed-credentials-action DISABLE
+* To Update the environment for security measures,  specifically disable the managed rotated credentials, and instead use the cloud9-containers-role that CloudFormation created from the template
+* Find my AWS account id with the AWS CLI
+<img width="694" alt="18 aws get caller identity" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/3ed97f47-1952-4f64-9c41-31bf00adfc95">
 
 7. Wait for a couple of minutes, and then run the following command:
 * aws sts get-caller-identity
