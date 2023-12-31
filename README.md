@@ -30,7 +30,7 @@
 * Download the following CloudFormation template. This template will set up the backend resources that are needed to complete the exercise.
 * On AWS Management Console, open CloudFormation.
 <img width="957" alt="1" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/2e1f19e0-c4e1-4e32-8857-90e7f5243beb">
-* Create stack.
+* Create stack and tick templete
 <img width="955" alt="2" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/15112954-6da8-4f6c-9805-9c92c6f566fc">
 * For Specify template, choose Upload a template file.
 <img width="958" alt="3a" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a5e11039-c2df-4305-a9b5-7cfbefff9319">
@@ -45,24 +45,30 @@
 
 * Reviewed stack for any errors and corrections
 <img width="944" alt="7 review" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/958fe762-bb11-430f-b687-7d9c4205ab46">
-* Acknowledge Cloudformation to create IAM resources, submit stack and  wait for the stack to complete
+* Acknowledge Cloudformation to create IAM resources and submit stack 
 <img width="946" alt="8 scroll down and acknowledge cloudformation and click next" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/39409f25-fa31-404d-a837-e58d30582672">
 
+* Wait for the stack processing to complete
+<img width="928" alt="9 stack in process" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/ce479254-a3e9-4f65-9af8-8809a844504e">
  
-  
-
 ## PART 1: Creating the Container
-* In this exercise, I will create an AWS Cloud9 instance and modify some of the environment settings.
-* Install the prerequisites and source code that are needed to launch new container instances inside AWS Cloud9 environment.
+### In this exercise, I will Switch over to Cloud9 Terminal to  create an instance and modify some of the environment settings,
+### And install the prerequisites and source code that are needed to launch new container instances inside AWS Cloud9 environment.
 
 
 ### Task 1: Creating an AWS Cloud9 instance
-* In this task, you will create an AWS Cloud9 instance.
-* For Name, I will enter containers-cloud9 and choose Next step.
-* Then, configure the following settings:
+* In the environment, give it a name
+* Create an AWS Cloud9 instance
+<img width="946" alt="10 create cloud9" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/19808089-f3ae-481f-87e7-e9c10f454ad7">
+  
+* In the Network setting, configure the following settings:
+* Connection access: Aws system manager (SSM)
 * Instance type: t3.small (2 GiB RAM + 2 vCPU) (I used t2 in this project)
-* Network settings: VPC settings: Containers VPC
-5. Choose Create.
+* VPC settings: Containers VPC
+* Choose Create.
+<img width="960" alt="11 scroll down to setting choose vpc containers vpc" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/76dcc8b2-dc4d-4374-812b-dc07bd723f4f">
+  
+
 
 
 ### Task 2: Modifying and deploying source code to AWS Cloud9
