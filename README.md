@@ -93,17 +93,13 @@
 * Ensure that the State is listed as associated
 <img width="655" alt="17 state is associated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/6a778ab0-af98-4a37-885c-d8a6fce0f531">
 
-* To Update the environment for security measures,  specifically disable the managed rotated credentials, and instead use the cloud9-containers-role that CloudFormation created from the template
-* Find my AWS account id with the AWS CLI
+* To Update the environment for security measures,  specifically disable the managed rotated credentials, and instead use the cloud9-containers-IAM-role that CloudFormation created from the template
+* The AWS security token services (sts) get-caller-identity command displays credential information delegated access to the IAM identity role used to authenticate the request
 <img width="694" alt="18 aws get caller identity" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/3ed97f47-1952-4f64-9c41-31bf00adfc95">
 
-7. Wait for a couple of minutes, and then run the following command:
-* aws sts get-caller-identity
-* You should see an Amazon Resource Name (ARN) that matches a role in the CloudFormation template:
-* arn:aws:sts::0123456789012:assumed-role/cloud9-containers-role/i-xxxxxxxxxxxxxxxxxx
+* Expand the AWS Cloud9 disk specifically by running the a utility
+<img width="705" alt="19 bash utilities c9-resize sh 40" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/0bad3db5-f2ae-49e0-89bf-71956a77100d">
 
-8. Expand the AWS Cloud9 disk by running the following utility:
-* bash utilities/c9-resize.sh 40
 
 ### Task 3: Building the first container
 * In this task, you will pull the required images and build your first Docker container.
