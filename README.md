@@ -101,31 +101,26 @@
 <img width="705" alt="19 bash utilities c9-resize sh 40" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/0bad3db5-f2ae-49e0-89bf-71956a77100d">
 
 
-### Task 3: Building the first container
-* In this task, you will pull the required images and build your first Docker container.
+### Task 3: Building the container
+### In this task, I will pull the required images and build my Docker container.
 
-1. Change directory to first-container/.
-* cd first-container/
-  
-2. Inspect the Dockerfile, and build a container image.
-* docker build -t first-container .
+* Cd to the container
+<img width="835" alt="20b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/89bea26d-c289-461b-b60b-b71451afe7dc">
 
-3. view the Docker images.
-* docker image ls
-* The application being served sits on port 8080 in the container image.
+* docker ls to view container created
+<img width="748" alt="21 docker image created" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/4e39bd66-511f-4ab4-a13a-852013c56c74">
 
-4. Publish port 8080 to your AWS Cloud9 host and make it available on port 8080.
-* docker run -d -p 8080:8080 --name webapp first-container
+* docker run the container detach on port 8080
+* docker ps view running docker containers
+* Publish port 8080 to the Cloud9 host and make it available on port 8080.
+<img width="753" alt="22 docker run d port 8080" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/adf268d2-2516-45ba-8d92-6558160f2945">
 
-5. View the running Docker containers.
-* docker ps
+* View the application in a browser.
+* At the top of my AWS Cloud9 instance, Preview and then choose Preview Running Application.
+* View the running application.
+<img width="941" alt="23 application running on browser" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/680d30f3-b84d-4801-95d0-1a60746f3e1b">
 
-6. View the logs that are being captured from the container.
-* docker logs webapp
-* You will now view the application in a browser.
 
-7. At the top of your AWS Cloud9 instance, choose Preview and then choose Preview Running Application.
-* You should see the running application.
 
 8. Launch a shell inside the container.
 * You can use this shell to run commands within the container itself.
