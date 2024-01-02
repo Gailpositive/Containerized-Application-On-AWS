@@ -136,21 +136,44 @@
 * Force-remove the container.
 <img width="756" alt="28 Force remove the container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/9542365a-ed6b-40c3-b5f0-ab3e2a61a4bf">
 
+
 <img width="421" alt="29 ECR image" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b2a1824d-9206-40ab-b816-2805caf62523">
-<img width="751" alt="30 cretae ECR repo and save" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/c06590c3-9ffd-4784-bd34-b3e1448241e6">
 
-
-
-
-
-
-
-## PART TWO: AWS IMAGE REGISTRY--Amazon ECR and AWS App Runner
-
-### AWS Techonolgies Used:
-* AWS TECHNOLOGIES USED
+## PART 2: Create A Private Container Registry Within AWS Elastic Container Registry (ECR) and Deploy It On AWS App Runner
+### AWS Technologis Used:
+* AWS Cloud9 IDE
 * AWS Identity and Access Management (IAM) policy and user 
 * AWS App Runner service
+* Amazon Elastic Container Registry (Amazon ECR) repository
+
+### TASK 1
+* In this exercise, I create an Amazon ECR repository,
+* Authenticate to Amazon ECR,
+* Push my image to the Amazon ECR repository
+* Set up and deploy an AWS App Runner service.
+
+* Create ECR repository
+* Enter the name and save
+<img width="751" alt="30 cretae ECR repo and save" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/c06590c3-9ffd-4784-bd34-b3e1448241e6">
+
+*  Choose the first-container repository link 
+<img width="943" alt="31 private repo created" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/fd2cbf51-bda1-43dc-a956-eb5fc7d2bf92">
+
+* click View push commands 
+<img width="922" alt="32 click on veiw push cpmmand to view  the commands that you will use from your AWS Cloud9 instance" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/ddbb8011-ce58-443d-bd47-77aad82bc824">
+
+* To see the commands that will be use from your AWS Cloud9 instance to authenticate ECR.
+<img width="951" alt="33 view push commands on windows" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/9f066233-aae9-4c9d-852d-862c2db98ac9">
+
+ ### Task 2: Authenticate to Amazon ECR
+* In this task, I will authenticate to ECR through the AWS Cloud9 IDE instance by running the push commands (which you saw in ECR).
+
+* Open cloud9 instance
+<img width="948" alt="34 Open cloud9 IDE" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a3a2dfae-d0d8-4847-b669-783dd823b2a1">
+
+* 
+<img width="925" alt="35bcd in first container containing  my docker file" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/3f727e2a-5404-4c09-8b38-4724da588240">
+
 
 
 
