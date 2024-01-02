@@ -65,11 +65,10 @@
 ## Task 2: Modifying and deploying source code to AWS Cloud9
 ### In thsi task, I will update the CLI version, deploy source code, associate the instance profile with the cloud9 instance and finally expand the environment to give it more disk space
 
-* To update the CLI version I ran the following command
-* curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-* unzip awscliv2.zip
-* sudo ./aws/install
-* . ~/.bashrc 
+* In the AWS Cloud9 terminal, I upgrade the AWS CLI version
+* Deploy the source code that’s needed to complete the exercise
+* Associate the instance profile with my AWS Cloud9 instance
+* Finally, I will expand my environment to give it more disk space.
 <img width="910" alt="13aws install updated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/380d38af-e9af-48c0-8939-3a1fdaf39424">
 
 * verify the version
@@ -92,26 +91,49 @@
 <img width="705" alt="19 bash utilities c9-resize sh 40" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/76f83035-3539-4393-921e-4bcd4084a710">
 
 ### Task 3: Building the first container
+### In this task, I will pull the required images and build my Docker container.
 
-* Change directory to first-container/.
+* Cd to first-container
 * build a container image name first-container with the -t flag
-<img width="950" alt="20 inspect docker file and build a container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/06741ae4-2548-4691-87f7-c20058ddee9a">
+<img width="835" alt="20b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/89bea26d-c289-461b-b60b-b71451afe7dc">
 
-* List images
+* docker ls to view container created
 <img width="748" alt="21 docker image created" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/835cf819-3b0f-4f80-9e17-2511fafbdc03">
 
-* 
+* docker run the container detach on port 8080
+* docker ps view running docker containers
+* Publish port 8080 to the Cloud9 host and make it available on port 8080.
 <img width="753" alt="22 docker run d port 8080" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b2693b10-e631-4f05-943b-5a413e9f9a71">
 
+* View the application in a browser.
+* At the top of my AWS Cloud9 instance, Preview and then choose Preview Running Application.
+* View the running application.
 <img width="941" alt="23 application running on browser" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/0a709db0-f459-43f5-ab81-35a08be717c0">
 
+* Launch a shell inside the container
+* docker exec -it webapp /bin/sh
+* view process list
+* In the container, view the contents of the /app folder and the contents of /app/input.txt.
+* Escape out of the container
 <img width="768" alt="24 docker exec" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/c149fa9c-b76d-4b70-b6ff-58eab93d86c0">
 
+* Stop and remove the running container.
 <img width="764" alt="25 stop and rm running webapp" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/eddb7aa1-77e3-4a29-90b5-947024192942">
+
+
+### Task 4: Modifying the container with new data
+* In this task, I will change the input.txt file inside the container with new data. I can use a bind mount to mount a local file resource in place of /app/input.txt inside the container.
+
+* Create an ~/input.txt file with five words, with each word on a new line and 
+* Launch a container with the new file mounted in place of /app/input.txt.
+* Configure an application that’s running in a container with environment variables. The containerized application takes MESSAGE_COLOR as an environment variable.
 <img width="737" alt="26  create app input text and launch a container with the new file mounted" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/79534299-ffcb-4f87-aac4-099b6dbb7956">
 
+
+* Visit the updated application in cloud9 browser by choosing Preview, Preview Running Application.
 <img width="563" alt="27  view updated application running on broswer" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/054394d6-1bef-43d1-b384-a82dcf23a5c2">
 
+* Force-remove the container.
 <img width="756" alt="28 Force remove the container" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/9542365a-ed6b-40c3-b5f0-ab3e2a61a4bf">
 
 <img width="421" alt="29 ECR image" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/b2a1824d-9206-40ab-b816-2805caf62523">
