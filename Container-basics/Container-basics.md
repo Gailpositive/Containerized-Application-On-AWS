@@ -177,5 +177,14 @@
 
 
 
-  
+<img width="779" alt="36 docker build" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a0884dd3-b5e2-4b40-b86f-8030ece91bf2">
 
+<img width="725" alt="37 filter reference" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a115bc0b-8574-4cb5-ac57-ce7f731f2861">
+
+<img width="748" alt="38 account and region" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/2a945462-0393-401a-8d8b-955bce429ca0">
+
+<img width="611" alt="39 powershell aws config" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/e580d08a-bd63-4c1b-b043-db76b162d0a5">
+
+<img width="694" alt="40 upgrade asw cli" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/08af37bf-6bc9-4e1f-978e-556ca10ae253">724da588240">
+
+<img width="767" alt="41 and 42 updated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/dbe1b44f-4a93-4ebd-beb5-a2de70d0c076">
