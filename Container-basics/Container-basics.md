@@ -201,7 +201,12 @@
 * Container image URI, choose Browse.
 <img width="946" alt="48" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/29a30dc2-c0d9-4fd3-a2a6-7ce330f3cd97">
 
+* In deployment setting, choose manual trigger
+* Create new ECR access role
+* Choose next
 <img width="928" alt="46" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/29b40d54-e14a-4f89-8e47-9b639485787c">
+
+* Select the ECR image and continue
 <img width="922" alt="47" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/13aa8454-3f17-4da8-8125-feb9037b8591">
 
 
