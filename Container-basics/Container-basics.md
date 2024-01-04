@@ -171,20 +171,44 @@
 * Open cloud9 instance
 <img width="948" alt="34 Open cloud9 IDE" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a3a2dfae-d0d8-4847-b669-783dd823b2a1">
 
-* 
+* Cd in the first-container
 <img width="925" alt="35bcd in first container containing  my docker file" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/3f727e2a-5404-4c09-8b38-4724da588240">
 
-
-
-
+* Build my docker image adding  a new tag flag
 <img width="779" alt="36 docker build" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a0884dd3-b5e2-4b40-b86f-8030ece91bf2">
 
+* filter to view only this particular  docker image 
 <img width="725" alt="37 filter reference" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/a115bc0b-8574-4cb5-ac57-ce7f731f2861">
 
+* Retrieve AWS ID
+* Retrieve instance metadata
 <img width="748" alt="38 account and region" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/2a945462-0393-401a-8d8b-955bce429ca0">
 
-<img width="611" alt="39 powershell aws config" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/e580d08a-bd63-4c1b-b043-db76b162d0a5">
-
-<img width="694" alt="40 upgrade asw cli" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/08af37bf-6bc9-4e1f-978e-556ca10ae253">724da588240">
-
+*  Authenticate to ECR registry that my IAM principal has access to
+*  Login successful
 <img width="767" alt="41 and 42 updated" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/dbe1b44f-4a93-4ebd-beb5-a2de70d0c076">
+
+* Push docker image 
+<img width="959" alt="42 b" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/94f48577-b870-4768-8ed7-7509a9122a7e">
+
+### Task 3: Setting up AWS App Runner
+
+* Create app runner 
+<img width="951" alt="43 create APP runner" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/4517c6ce-bb2c-4c3a-9d74-f0d026123a91">
+
+* In source and depolyment repository type, choose container 
+* Provider is private ECR
+<img width="956" alt="44" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/540d3607-c028-4be2-80e4-2ed4005c4407">
+
+* 
+<img width="930" alt="45" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/e08537ec-5e62-43b9-a8a9-e300e13ed9e8">
+
+<img width="928" alt="46" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/29b40d54-e14a-4f89-8e47-9b639485787c">
+<img width="922" alt="47" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/13aa8454-3f17-4da8-8125-feb9037b8591">
+
+
+
+
+
+
+<img width="611" alt="39 powershell aws config" src="https://github.com/Gailpositive/Containerized-Application-On-AWS/assets/111061512/e580d08a-bd63-4c1b-b043-db76b162d0a5">
